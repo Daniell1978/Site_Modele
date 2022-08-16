@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    background-color: white
+}
+.container {
+   
+    max-width: 1400px;
+    margin: auto;
+}
+.line {
+    border-bottom: 2px solid #ccc;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.header--logo img{
+    margin-top: 10px;
+    width: 200px;
+    height: 80px;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.header--right{
+    display: flex;
+    align-items: center;
+}
+.header-search form {
+    display: flex;
+}
+.header-search input {
+    
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    width: 250px;
+    max-width: 250px;
+       
+}
+.header-search button {
+    border: 0;
+    background: transparent;
+    margin-left: -40px;
+   
+}
+.header-search button img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.header--menu {
+    margin-left: 120px;
+    margin-right: 60px;
+}
+.header--menu img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+}
+.container2 {
+    margin-top: 50px;
+    width: 1400px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 5px;
+   
+}
+.item {
+    
+    padding: 10px;
+    color: rgb(20, 19, 19);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.item img {
+    margin-left: 80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+.item h2 {
+    text-align: center;
+    padding: 0;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+.item h3 {
+    margin-top: 1px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.banner {
+    height: calc(100vh - 102px);
+    background-color: #999;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-position: button;
+    overflow: hidden;
+}
+.banner .sliders {
+    width: 301vw;
+    height: 100%;
+    
+
+
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content:center;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-size: bold;
+    font-size: 40px;
+}
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pointer {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+.banner .pointer.active {
+    background-color: #b28756;
+}
